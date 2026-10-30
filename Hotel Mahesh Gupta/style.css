@@ -1,0 +1,782 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #333333;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+    color: #8b4513;
+    font-size: 36px;
+}
+h2{
+    color: #b36b27;
+    font-size: 26px;
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+body{
+    padding: 50px 30px 30px;
+
+}
+.navbar{
+    background-color: #24221f;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+.navbar.logo{
+    color: #e5b36a;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #65594a;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 5px;
+    padding: 0;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: #e5b36a;
+}
+.hero{
+    background-color: #e8dcc8;
+    padding: 50px 20px;
+    margin-top: 25px;
+}
+.hero h1{
+    color:#704214;
+    font-size: 38px;
+}
+.hero p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.book-btn {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.book-btn:hover{
+    background-color: #5c2e0b;
+}
+.rooms{
+    padding: 40px 20px;
+    margin-top: 25;
+}
+.room-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.room-card{
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.room-card h3{
+    color: #8b4513;
+}
+.room-card p:last-child{
+    font-weight: bold;
+}
+.restaurant{
+    padding: 40px 20px;
+    margin-top: 25px;
+    background-color: #f5f1e8;
+}
+
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 16px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.menu-category {
+    align-self: start;
+    height: auto;
+    min-width: 0;
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+.menu-category h3 {
+    color: #e85d04;
+    border-bottom: 2px solid #ffb36b;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.menu-category p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    line-height: 1.6;
+}
+.menu-category p span {
+    color: #a84300;
+    font-weight: 700;
+    text-align: right;
+    white-space: normal;
+}
+.menu-note {
+    font-size: 14px;
+    color: #555555;
+}
+@media(max-width:650px){
+    .menu-container{
+        grid-template-columns: 1fr;
+    }
+}
+.about{
+    padding: 45px 20px;
+    margin-top: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+.about > p {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+.facilities{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.facilities-card{
+    background-color: #f5f1e8;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+}
+.facilities-card h3{
+    color: #8b4513;
+}
+.contact{
+    background-color: #24221f;
+    color: white;
+    padding: 35px 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+.contact h2 {
+    color: #e5b36a;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact p{
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+.contact a {
+    color: #e5b36a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact a:hover{
+    color: white;
+    text-decoration: underline;
+}
+@media(max-width:768px){
+    body{
+        padding: 20px 12px;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .hero{
+        padding: 40px 15px;
+    }
+    .rooms{
+        padding: 20px 10px;
+    }
+    .menu{
+        padding: 20px 10px;
+    }
+    .contact{
+        padding: 25px 12px;
+    }
+    .contact p{
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Booking Section */
+.booking {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Booking Heading */
+.booking h2 {
+    color: #8b4513;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.booking p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Form Layout */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Field Labels */
+.booking-form label {
+    font-weight: bold;
+    color: #333333;
+    margin-top: 8px;
+}
+
+/* Input Fields and Dropdown */
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+    border-color: #b36b27;
+}
+
+
+.booking-form button {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.booking-form button:hover {
+    background-color: #63300d;
+}
+
+
+@media (max-width: 600px) {
+    .booking {
+        margin: 25px 5px;
+        padding: 20px 15px;
+    }
+
+    .booking h2 {
+        font-size: 24px;
+    }
+}
+
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 40px 7%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("photo.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero .welcome-text {
+    color: #f3bd63;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: #f3bd63;
+    font-size: clamp(34px, 5vw, 58px);
+    margin: 15px 0;
+}
+
+.hero h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 24px;
+    background-color: #f3bd63;
+    color: #24180d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.hero-btn:hover {
+    background-color: white;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+    .hero {
+        min-height: 400px;
+        padding: 25px 20px;
+        background-position: center;
+    }
+
+    .hero h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0 14px;
+    }
+
+    .menu-category {
+        padding: 18px;
+    }
+}
+
+
+.food-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: #fffaf5;
+    padding: 16px;
+    margin: 12px 0;
+    border: 1px solid #f3e3d5;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.food-info h4 {
+    margin: 0 0 6px;
+    color: #333;
+}
+
+.food-info p {
+    margin: 0 0 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+.food-price {
+    color: #e85d04;
+    font-weight: bold;
+}
+
+.add-btn {
+    background: #e85d04;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+    background: #c94c00;
+}
+
+.food-image {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.cart-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fffaf5;
+    border: 1px solid #f3e3d5;
+    border-radius: 16px;
+}
+
+.cart-section h2 {
+    color: #e85d04;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f3e3d5;
+}
+
+.cart-item button {
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-section #cart-total {
+    color: #e85d04;
+}
+
+@media (max-width: 600px) {
+    .cart-section {
+        margin: 20px 10px;
+        padding: 14px;
+    }
+}
+.hero-slider {
+    position: relative;
+    width: 98%;
+    height: 350px;
+    margin: 10px auto 30px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff0df;
+}
+
+.hero-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.hero-slide.active {
+    display: flex;
+    animation: heroFade 0.6s ease;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-label {
+    color: #e85d04;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    color: #29221d;
+    font-size: clamp(25px, 3.2vw, 42px);
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+.hero-content p {
+    color: #5c5149;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 430px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 24px;
+    border-radius: 7px;
+    background: #e85d04;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: #c94b00;
+}
+
+.hero-slide img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: white;
+    color: #e85d04;
+    cursor: pointer;
+}
+
+.hero-prev {
+    left: 10px;
+}
+
+.hero-next {
+    right: 10px;
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #d5b9a5;
+    cursor: pointer;
+}
+
+.hero-dot.active {
+    background: #e85d04;
+}
+
+@keyframes heroFade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 650px) {
+    .hero-slider {
+        height: 440px;
+    }
+
+    .hero-slide {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 25px 28px 38px;
+        gap: 12px;
+    }
+
+    .hero-slide img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+}
+/* Cart in top navigation */
+.nav-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e85d04;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-cart:hover {
+    background: #c94b00;
+}
+
+#cart-count {
+    background: white;
+    color: #e85d04;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Keep the navigation items aligned */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Basket cart button */
+.nav-cart {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background: #e85d04;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.basket-icon {
+    width: 23px;
+    height: 23px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav-cart #cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #fff;
+    color: #e85d04;
+    font-size: 12px;
+}
+
+/* Keep navbar items separated */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-shrink: 0;
+}
+/* Navbar links spacing fix */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 4px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.nav-cart span:not(#cart-count) {
+    display: none;
+}
+.nav-cart span {
+    display: none !important;
+}
